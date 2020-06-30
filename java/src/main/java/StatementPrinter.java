@@ -1,7 +1,7 @@
 import java.text.NumberFormat;
 import java.util.Locale;
 
-public class TheatricalPlayers {
+public class StatementPrinter {
 
     public String print(Invoice invoice) {
         double totalAmount = 0;

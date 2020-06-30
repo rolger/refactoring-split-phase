@@ -7,7 +7,7 @@ import org.approvaltests.reporters.UseReporter;
 import org.junit.Test;
 
 @UseReporter(JunitReporter.class)
-public class TheatricalPlayersTests {
+public class StatementPrinterTests {
 
     @Test
     public void exampleStatement() {
@@ -16,7 +16,7 @@ public class TheatricalPlayersTests {
                 new Performance(new Play("As You Like It", "comedy"), 35),
                 new Performance(new Play("Othello", "tragedy"), 40)));
 
-        TheatricalPlayers theatricalPlayers = new TheatricalPlayers();
+        StatementPrinter theatricalPlayers = new StatementPrinter();
         String result = theatricalPlayers.print(invoice);
 
         verify(result);
